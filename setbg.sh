@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "choosing wallpaper"
-wall=$(find $HOME/pix/wall -type f | shuf -n 1)
+wall=$(find $HOME/pictures/wall -type f | shuf -n 1)
 echo "setting up wallpaper"
 echo "generating color scheme"
 wal -i $wall >/dev/null
