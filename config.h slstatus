@@ -66,10 +66,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format */          
        { run_command, " %s updates |", "checkupdates | wc -l" },
-       { run_command, " %s |", "iwgetid -r" },
-       { cpu_perc, " %s%% cpu |", NULL },
-       { ram_perc, " %s%% ram |", NULL },
-       { battery_state, "%s",   "BAT1" },
-       { battery_perc, "%s%% |",    "BAT1" },
-       { datetime, " %s ",           "%H:%M" },
-};
+       { run_command, "  %s |", "iwgetid -r" },
+       { cpu_perc, "  %s%% ", NULL },
+       { ram_perc, "  %s%% ", NULL },
+       { battery_state, "  %s",   "BAT0" },
+       { battery_perc, "%s%% ",    "BAT0" },
+       { datetime, "  %s ",           "%H:%M" },
+ };
+
