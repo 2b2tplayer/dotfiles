@@ -1,0 +1,6 @@
+#!/bin/sh
+if pgrep -x "tor" > /dev/null; then
+  echo "tor enabled"
+else
+  echo "tor disabled"
+fi
