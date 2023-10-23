@@ -65,14 +65,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-/*     { run_command, "  %s",	"iwgetid -r" }, */
+	{ run_command, " (%s)", "$HOME/.local/bin/torcheck" },
 	{ run_command, " (%s updates)", "cat $HOME/.local/bin/updates.txt" },
-       { wifi_essid, " [  %s", "wlp12s0" },
-       { wifi_perc, "(%s%%) ]", "wlp12s0" },
-/*       { cpu_perc, "[  %s%%]", NULL }, */
-/*       { ram_used, " [  %s ]", NULL }, */
-       { battery_state, " [  %s",   "BAT0" },
-       { battery_perc, "%s%% ",    "BAT0" },
-       { battery_remaining, "%s ]", 	"BAT0" },
-       { datetime, " [  %s ]",           "%H:%M" },
+	{ wifi_essid, " [  %s", "wlp12s0" },
+	{ wifi_perc, "(%s%%) ]", "wlp12s0" },
+/*      { cpu_perc, "[  %s%%]", NULL }, */
+/*      { ram_used, " [  %s ]", NULL }, */
+	{ battery_state, " [  %s",   "BAT0" },
+	{ battery_perc, "%s%% ",    "BAT0" },
+	{ battery_remaining, "%s ]", 	"BAT0" },
+	{ datetime, " [  %s ]",           "%H:%M" },
 };
