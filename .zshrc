@@ -17,19 +17,9 @@ pomodoro () {
         timer ${pomo_options["$val"]}m
         fi
 }
-
+alias torstop="sudo torctl stop"
+alias torstart="sudo torctl start"
 alias work="pomodoro 'work'"
 alias break="pomodoro 'break'"
 alias sign="gpg --clear-sign --personal-digest-preferences SHA512"
-alias site="ssh -p 65002 u349713375@149.62.37.137"
-alias bg="./.xinitrc"
-alias iptest='curl wtfismyip.com/json'
 alias storage="pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | less"
-
-# pnpm
-export PNPM_HOME="/home/tokyo/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
