@@ -1,0 +1,9 @@
+#!/bin/sh
+
+wall=$(find $HOME/pictures/wall -type f -iname "*.jpg" -o -name "*.png" | shuf -n 1)
+
+wal -c
+wal -i $wall
+sleep 5
+xwallpaper --zoom $wall
+xdotool key super+F5
