@@ -1,4 +1,4 @@
-$HOME/.local/bin/actualbg.sh &
-checkupdates | wc -l > $HOME/.local/bin/updates.txt &
-exec slstatus &
-while type dwm >/dev/null ; do dwm && continue || break ; done
+~/.local/bin/set_wallpaper &
+~/.local/bin/updatecheck &
+slstatus &
+exec dwm < /dev/null 2>&1
